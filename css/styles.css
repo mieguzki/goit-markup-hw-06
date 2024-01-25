@@ -143,30 +143,41 @@ img {
 /* ----------------------------------------- */
 /* ------------------HERO------------------ */
 .hero {
-    padding-top: 188px;
-    padding-bottom: 188px;    
+    /* padding-top: 188px;
+    padding-bottom: 188px;     */
+    padding-top: 72px;
+    padding-bottom: 72px;    
     margin:auto; 
-    max-width: 1440px;
+    max-width: 320px;
+    /* max-width: 1440px; */
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mob.jpg);
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;
 }
-
-
-.hero-title {
-    color:#FFF;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    max-width: 496px;
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi)
+{ .hero{ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mob-2x.jpg);
 }
+}
+    .hero-title{
+        color:#FFF;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        margin: 0 auto;
+        margin-bottom: 72px;
+        max-width: 216px;
+        text-transform: capitalize;                        
+    }
 
 .hero-order-btn {
     color: #FFF;
@@ -192,7 +203,7 @@ img {
 .hero-order-btn:hover,
 .hero-order-btn:focus,
 .hero-order-btn:active {
-    background-color: #404BBF;
+background-color: #404BBF;
 }
 /* ----------------------------------------- */
 /* ------------------ABOUT US------------------ */
@@ -780,6 +791,30 @@ border-color: #4D5AE5
     .container{
         max-width: 768px;
     }
+    .hero{
+        padding-top: 112px ;
+        padding-bottom: 112px;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tab.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi)
+{ .hero{ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tab-2x.jpg);
+}
+}
+    .hero-title{
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 36px;
+        max-width: 496px;
+    }
+
     .features-list{
         gap:64px 24px;
     }
@@ -812,6 +847,28 @@ border-color: #4D5AE5
         padding-left: 15px;
         padding-right: 15px;
     }
+    .hero{
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);  
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi)
+{ .hero{ background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-2x.jpg);
+}
+}
+    .hero-title{     
+        margin-bottom: 48px;
+        max-width: 496px;         
+                        
+    } */
     .features{
     padding-top: 120px;
     padding-bottom: 120px;
