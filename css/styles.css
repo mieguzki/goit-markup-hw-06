@@ -26,12 +26,9 @@ button{
     cursor: pointer;
 }
 
-.container{
-    /* max-width:1158px; */
-    max-width: 320px;
-    /* width: 100%; */
-    padding-left: 16px;
-    padding-right: 16px;
+.container{    
+    max-width: 320px;    
+    padding: 0 16px;
     margin: 0 auto;
 }
 img {
@@ -512,10 +509,7 @@ letter-spacing: 0.02em;
 
 /* ----------------------------------------- */
 /* ------------------FOOTER----------------- */
-.footer-name { 
-    /* padding: 100px 0 ;
-    background-color: #2E2F42;         
-     */
+.footer-name {   
     padding: 96px 0 ;
     background-color: #2E2F42;
 } 
