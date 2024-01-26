@@ -108,9 +108,9 @@ color:#2E2F42
     padding-right: 24px;
     padding-bottom: 40px;
     padding-left: 16px;
+    padding-top: 24px;    
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: column;    
     overflow: auto;
     opacity: 0;
     visibility: hidden;
@@ -118,10 +118,8 @@ color:#2E2F42
 
 }
 
-.mob-menu-close-btn {
-    position: absolute;
-    top:24px;
-    right:24px;
+.mob-menu-close-btn {    
+    margin-left: auto;    
     width:24px;
     height: 24px;
     border-radius: 50%;
@@ -132,12 +130,12 @@ color:#2E2F42
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor:pointer;
-
+    margin-bottom: 24px;
 }
 .mob-menu-btn-img {
 }
 .mob-nav-link {
-    margin-top: 72px;
+    /* margin-top: 72px; */
 
 }
 .mob-menu-item:not(:last-child){
@@ -159,7 +157,7 @@ text-transform: capitalize;
 
 }
 .mob-adress-list {
-     
+ 
 }
 .mob-adress-item:not(:last-child){
     margin-bottom: 24px;
@@ -171,16 +169,17 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2; /* 120% */
 letter-spacing: 0.02em;
- 
+
 }
 
 
-.mob-icon-list {    
-    
+.mob-icon-list {      
     justify-content: center;
     align-items: center;    
     display: flex;
     gap:40px;
+    margin-top: auto;
+    
 
 }
 .mob-icon-item {
