@@ -509,109 +509,118 @@ letter-spacing: 0.02em;
 
 /* ----------------------------------------- */
 /*               FOOTER                             */
-.footer-name {
+.footer {
     padding: 96px 0;
-    background-color: #2E2F42;
-}
-.container {
-}
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-.footer-part {
-}
-.footer-logo {
+    background-color: #2e2f42;
+  }
+  
+  .container-logo {
+    margin-bottom: 72px;
+  }
+  
+  .footer-text {
+    max-width: 264px;
+  
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  
+  .span-footer {
+    color: #f4f4fd;
+  }
+  
+  .footer-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 16px;
-    color: #4D5AE5;
+  
+    color: #4d5ae5;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
-}
-.footer-logo-part {
-    color:#F4F4FD
-}
-.footer-text {
-    max-width:264px ;
-    margin-bottom: 72px;
-    color: #F4F4FD;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-.social-media {
-    margin-right: 0;
-}
-.social-media-text {
+  }
+  
+  .footer-social-text {
     display: flex;
-    width: 264px;
+    width: 100%;
     margin-bottom: 16px;
-    color: #FFF;
-    font-family: "Roboto",sans-serif;
+  
+    color: #fff;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     justify-content: center;
-
-}
-.social-media-list {
+  }
+  
+  .footer-social-list {
     display: flex;
     justify-content: center;
-    gap:16px;
+    gap: 16px;
+  }
+  
+  .container-media {
     margin-bottom: 72px;
-}
-.social-media-item {
-}
-.social-media-link {
+  }
+  
+  .footer-social-icons {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+  }
+  
+  .footer-social-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
-    height:40px;
-    background-color: #4D5AE5;
+    height: 40px;
+    background-color: #4d5ae5;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
-
-}
-.social-media-link:hover,
-.social-media-link:focus{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-social-link:hover,
+  .footer-social-link:focus {
     background-color: #31d0aa;
-}
-
-.social-media-icon {
-    width: 24px;
-    height: 24px;
-    fill:#F4F4FD;
-}
-.footer-subsribe {
-}
-.subsribe-text {
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Form */
+  .footer-form {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-label {
     margin-bottom: 16px;
-    color: #FFF;
+  
+    color: #fff;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-}
-.footer-form {
+  }
+  
+  .form-button {
     display: flex;
-    gap: 16px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-label {
-}
-.footer-input-email {
+  }
+  
+  .footer-form-email {
     width: 264px;
     height: 40px;
     padding-left: 16px;
@@ -619,16 +628,19 @@ letter-spacing: 0.02em;
     border-radius: 4px;
     border: 1px solid #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border-color: transparent;
-    color:fff;
+    background-color: transparent;
+    color: #fff;
+  
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-}
-.footer-input-email::placeholder{
-    color:#FFF;
-}
-.footer-btn {
+  }
+  
+  .footer-form-email::placeholder {
+    color: #fff;
+  }
+  
+  .footer-form-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -636,21 +648,23 @@ letter-spacing: 0.02em;
     height: 40px;
     padding: 0 24px;
     cursor: pointer;
-    color: #FFF;
-    background: #4D5AE5;
-    border:none;
+    color: #fff;
+    background: #4d5ae5;
+    border-radius: 4px;
+    border: none;
+  
     text-align: start;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
-}
-.footer-icon {
+  }
+  
+  .footer-form-icon {
     margin-left: 16px;
     fill: #FFF;
-}
+  }
 /* ----------------------------------------- */
 /* ------------BACKDROP--------------------- */
 .backdrop {
@@ -967,26 +981,35 @@ color: #404bbf;
     .portfolio-heel{
         width: calc( (100% - 24px)/2 ); 
     }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+      /* ----------------FOOTER--------------------- */
+    
+      .footer-form {
+        flex-direction: row;
+      }
+    
+      .footer-label {
+        text-align: start;
+      }
+    
+      .footer-form {
+        gap: 24px;
+      }
+    
+      .container-logo {
+        margin-right: 24px;
+      }
+    
+
     
 }
- /* ------------------------------FOOTER------------------ */
-.footer-container{
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.footer-form {
-    flex-direction: row;
-    gap:24px;
-    
-}
-.subsribe-text {
-    text-align: start;
-    
-}
-.social-media-list{
-    margin-bottom: 0;
-}
+
+
+
 
 @media screen and (min-width:1158px) {
     .container{
@@ -1070,23 +1093,31 @@ color: #404bbf;
 
 }
 /* ----------------FOOTER--------------------- */
-.footer{
-    padding: 100px;
-}
-.social-media-text {
-    justify-content: flex-start;
+.footer {
+    padding: 100px 0;
+  }
 
-}
-.social-media-list{
-    justify-content: center;
-    margin-right: 80px;
-}
-.footer-logo{
+  .footer-social-text {
     justify-content: flex-start;
-}
-.footer-part{
+  }
+
+  .footer-social-list {
+    justify-content: flex-start;
+  }
+
+  .footer-logo {
+    justify-content: flex-start;
+  }
+
+  .container-logo {
     margin-right: 120px;
-}
+    margin-bottom: 0;
+  }
+
+  .container-media {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 
 } 
 
